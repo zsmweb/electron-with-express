@@ -66,7 +66,7 @@
       // For electron-packager change cwd in spawn to app.getAppPath() and
       // uncomment the app require below
       //app = require('electron').remote.app,
-      node = spawn(".\\node.exe", ["./express-app/bin/www"], {
+      node = spawn("./node", ["./test/index.js"], {
         cwd: process.cwd()
       }),
       request = require("request"),
